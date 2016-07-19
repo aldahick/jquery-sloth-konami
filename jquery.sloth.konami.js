@@ -119,7 +119,7 @@
             var $this = $(this);
             var $canvas = $("<canvas></canvas>");
             $canvas.css("position", "relative");
-            $canvas.css("z-index", settings.zIndex);
+            $canvas.css("z-index", -99999);
             $this.css("position", "absolute");
             // "position: absolute" changes size, need to set canvas size after that
             $canvas[0].width = $this.width();
@@ -132,6 +132,7 @@
                 $.fn.sloth.forests.push(forest);
                 context.imageSmoothingEnabled = false;
                 var konami = new KonamiListener($this, function() {
+                    $canvas.css("z-index", settings.zIndex);
                     setInterval(buildCallback(forest, forest.render), settings.renderInterval);
                     setInterval(buildCallback(forest, forest.addSloth), settings.newSlothInterval);
                 });
