@@ -119,7 +119,7 @@
             var $this = $(this);
             var $canvas = $("<canvas></canvas>");
             $canvas.css("position", "relative");
-            $canvas.css("z-index", "-99999");
+            $canvas.css("z-index", settings.zIndex);
             $this.css("position", "absolute");
             // "position: absolute" changes size, need to set canvas size after that
             $canvas[0].width = $this.width();
@@ -146,7 +146,8 @@
         "drawHeight": 50,
         "renderInterval": 100,
         "newSlothInterval": 200,
-        "waterfallSpeed": 15
+        "waterfallSpeed": 15,
+        "zIndex": -99999
     };
     $.fn.sloth.forests = [];
 })(jQuery);

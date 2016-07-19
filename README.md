@@ -14,5 +14,6 @@ $("#foo").sloth({
     "renderInterval": 100, // the time in milliseconds between waterfall updates/renders
     "newSlothInterval": 200, // the time in milliseconds between sloth creations
     "waterfallSpeed": 15, // the number of pixels each sloth falls (on y-axis) per render/update
+    "zIndex": -99999, // the z-index of the canvas element created for the sloths
 });
 ```
