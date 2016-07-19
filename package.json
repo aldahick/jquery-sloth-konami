@@ -1,0 +1,24 @@
+{
+  "name": "jquery-sloth-konami",
+  "description": "jQuery plugin that rains sloths when the Konami code is entered.",
+  "version": "0.0.1",
+  "author": "Alex Hicks <alex@alexhicks.net>",
+  "homepage": "https://github.com/aldahick/jquery-sloth-konami",
+  "bugs": {
+    "url": "https://github.com/aldahick/jquery-sloth-konami/issues"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "sloths",
+    "konami"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aldahick/jquery-sloth-konami"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "jquery": ">=1.10"
+  }
+}

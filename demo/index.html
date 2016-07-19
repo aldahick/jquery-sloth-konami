@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery Sloth Konami Demo</title>
+        <style>
+        .konami-test {
+            /*Need to have enough area to reliably demo*/
+            min-width: 400px;
+            min-height: 400px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="konami-test">
+            <p>Hello, world!</p>
+            <p>This is a test of sloths.</p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="../jquery.sloth.konami.js"></script>
+        <script>
+        $(document).ready(function() {
+            $(".konami-test").sloth({"imageUrl": "sloth.png"});
+        });
+        </script>
+    </body>
+</html>
