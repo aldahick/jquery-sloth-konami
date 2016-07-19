@@ -118,13 +118,13 @@
         return this.each(function() {
             var $this = $(this);
             var $canvas = $("<canvas></canvas>");
-            $canvas.css("position", "relative");
+            $canvas.css("position", "absolute");
             $canvas.css("z-index", -99999);
-            $this.css("position", "absolute");
+            $this.css("position", "relative");
             // "position: absolute" changes size, need to set canvas size after that
             $canvas[0].width = $this.width();
             $canvas[0].height = $this.height();
-            $this.after($canvas);
+            $this.prepend($canvas);
             var context = $canvas[0].getContext("2d");
             var image = new Image();
             image.onload = function() {
